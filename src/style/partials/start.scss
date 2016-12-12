@@ -1,0 +1,32 @@
+.start{
+	display: flex;
+	height: 1080px;
+	background: url(../img/bgs/1.jpg) no-repeat center top;
+	background-size: cover;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+.start-container{
+	text-align: center;
+}
+
+.start-place{
+	position: relative;
+}
+
+.start-logo{
+	
+}
+
+.start-text{
+	position: absolute;
+	bottom: 100px;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 13pt;
+	font-weight: $bold;
+	color: $white;
+	letter-spacing: 10px;
+}

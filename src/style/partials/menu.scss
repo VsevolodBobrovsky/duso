@@ -1,0 +1,59 @@
+.menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	width: 60px;
+	height: 100vh;
+	background: $black;
+	text-align: center;
+}
+
+.menu-top{
+	padding: 20px 0 0;
+}
+
+.menu-logo{
+	
+}
+
+.menu-nav{
+	color: $white;
+	margin: 20px 0;
+	font-size: 14pt;
+}
+
+.menu-call{
+	display: inline-block;
+	background: $grey;
+	color: $black;
+	font-size: 10pt;
+	padding: 2px 5px;
+	border-radius: 50%;
+}
+
+.menu-middle{
+	color: $red;
+	font-size: 16pt;
+}
+
+.menu-bottom{
+	padding: 0 0 25px;
+	font-size: 12pt;
+}
+
+.menu-search{
+	display: inline-block;
+	color: $grey;
+	border-top: 1px solid $red;
+	border-bottom: 1px solid $red;
+	padding: 5px;
+	margin: 0 0 10px;
+}
+
+.menu-social{
+	color: $grey;
+	margin: 15px 0;
+}
