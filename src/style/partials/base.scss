@@ -16,3 +16,31 @@ body{
 	width: 825px;
 	margin: 0 auto;
 }
+
+.title{
+	display: inline-block;
+	width: 300px;
+	margin: 130px 0 0;
+}
+
+.title-number{
+	color: $red;
+	margin: 0 0 5px;
+}
+
+.title-text{
+	font-family: $pf;
+	font-weight: $reg;
+	font-size: 24pt;
+	letter-spacing: 5px;
+	line-height: 25px;
+	position: relative;
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: -15px;
+		left: 0;
+		width: 25px;
+		border: 1px solid $black;
+	}
+}
