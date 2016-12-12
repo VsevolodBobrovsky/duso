@@ -1,3 +1,5 @@
+$menugrey: #413d3e;
+
 .menu{
 	position: fixed;
 	top: 0;
@@ -16,7 +18,7 @@
 }
 
 .menu-logo{
-	
+	width: 50px;
 }
 
 .menu-nav{
@@ -54,6 +56,116 @@
 }
 
 .menu-social{
+	display: block;
 	color: $grey;
 	margin: 15px 0;
+}
+
+.menu-full-call{
+	color: $white;
+	font-weight: $bold;
+	margin: 25px 0 45px;
+	font-size: 14pt;
+	letter-spacing: 3px;
+}
+
+.menu-subtitle, .menu-full-call, .menu-search-input, .menu-full-nav{
+	display: none;
+}
+
+.menu-subtitle{
+	width: 110px;
+	margin: -5px auto 0;
+	font-size: 12pt;
+	font-weight: $reg;
+	color: $menugrey;
+	text-align: left;
+}
+
+.menu-full-nav{
+	text-align: center;
+}
+
+.menu-nav-link{
+	display: inline-block;
+	padding: 4px 0 2px 5px;
+	margin: 5px 0;
+	width: 190px;
+	color: $menugrey;
+	font-family: $robcon;
+	font-size: 12pt;
+	text-align: left;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+
+.menu-nav-link:hover{
+	color: $white;
+	border-top: 1px solid $red;
+	border-bottom: 1px solid $red;		
+}
+
+.menu-small-arr{
+	float: right;
+}
+
+.menu-search-input{
+	font-family: $robcon;
+	background: transparent;
+	border: 0;
+	color: $white;
+}
+
+.menu-social-fb:hover{
+	color: #3b5998;
+}
+
+.menu-social-vk:hover{
+	color: #45668e;
+}
+
+.menu-social-in:hover{
+	color: #bc2a8d;
+}
+
+.menu:hover{
+	width: 220px;
+	background: linear-gradient(to left, $black, #3b0004);
+	
+	.menu-logo{
+		width: auto;
+		margin: 25px 0 0;
+	}
+
+	.menu-nav, .menu-call, .menu-big-arr{
+		display: none;
+	}
+
+	.menu-search, .menu-social, .menu-search-input{
+		display: inline-block;
+	}
+
+	.menu-subtitle, .menu-full-call, .menu-full-nav{
+		display: block;
+	}
+
+	.menu-search{
+		width: 190px;
+		text-align: left;
+		color: #fff;
+	}
+
+	.menu-search-icon{
+		float: right;
+	}
+
+	.menu-social{
+		margin: 50px 0;
+		padding: 5px 10px;
+	}
+
+	.menu-social:nth-child(3){
+		border-left: 1px solid $grey;
+		border-right: 1px solid $grey;
+	}
 }
