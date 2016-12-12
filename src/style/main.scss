@@ -1,0 +1,21 @@
+@import 'partials/mixins';
+@import 'partials/fonts';
+
+$black: #000;
+$white: #fff;
+$grey: #666;
+$red: #ed1c24;
+
+$rob: 'Roboto', sans-serif;
+$robcon: 'Roboto Condensed', sans-serif;
+$pf: 'PFDinTextCondPro';
+$th: 200;
+$lit: 300;
+$reg: 400;
+$med: 500;
+$bold: 700;
+$xbold: 900;
+
+$speed: .25s;
+
+@import 'partials/base';

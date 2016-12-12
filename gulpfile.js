@@ -9,7 +9,6 @@ var gulp = require('gulp'),
 	cssmin = require('gulp-clean-css'),
 	imagemin = require('gulp-imagemin'),
 	imageminJpegtran = require('imagemin-jpegtran'),
-	rimraf = require('rimraf'),
 	browserSync = require('browser-sync'),
 	reload = browserSync.reload;
 
@@ -18,19 +17,22 @@ var path = {
 		html: 'build/',
 		js: 'build/js/',
 		css: 'build/css/',
-		img: 'build/img/'
+		img: 'build/img/',
+		fonts: 'build/fonts/'
 	},
 	src: {
 		html: 'src/*.html',
 		js: 'src/js/main.js',
 		style: 'src/style/main.scss',
-		img: 'src/img/**/*.*'
+		img: 'src/img/**/*.*',
+		fonts: 'src/fonts/**/*.*'
 	},
 	watch: {
 		html: 'src/**/*.html',
 		js: 'src/js/**/*.js',
 		style: 'src/style/**/*.scss',
-		img: 'src/img/**/*.*'
+		img: 'src/img/**/*.*',
+		fonts: 'src/fonts/**/*.*'
 	},
 	clean: './build'
 };
@@ -69,6 +71,11 @@ gulp.task('style:build', function () {
 		.pipe(reload({stream: true}));
 });
 
+gulp.task('fonts:build', function() {
+    gulp.src(path.src.fonts)
+        .pipe(gulp.dest(path.build.fonts))
+});
+
 gulp.task('image:build', function () {
 	gulp.src(path.src.img)
 		.pipe(imagemin({
@@ -85,6 +92,7 @@ gulp.task('build', [
 	'html:build',
 	'js:build',
 	'style:build',
+	'fonts:build',
 	'image:build'
 ]);
 
@@ -101,6 +109,9 @@ gulp.task('watch', function(){
 	});
 	watch([path.watch.js], function(event, cb) {
 		gulp.start('js:build');
+	});
+	watch([path.watch.fonts], function(event, cb) {
+		gulp.start('fonts:build');
 	});
 	watch([path.watch.img], function(event, cb) {
 		gulp.start('image:build');
