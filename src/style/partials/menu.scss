@@ -11,6 +11,11 @@ $menugrey: #413d3e;
 	height: 100vh;
 	background: $black;
 	text-align: center;
+	z-index: 999;
+	transition: $speed/2;
+	&:hover{
+		transition: $speed/2;
+	}
 }
 
 .menu-top{
@@ -97,12 +102,11 @@ $menugrey: #413d3e;
 	text-align: left;
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
-}
-
-.menu-nav-link:hover{
-	color: $white;
-	border-top: 1px solid $red;
-	border-bottom: 1px solid $red;		
+	&:hover{
+		color: $white;
+		border-top: 1px solid $red;
+		border-bottom: 1px solid $red;
+	}
 }
 
 .menu-small-arr{
@@ -114,18 +118,6 @@ $menugrey: #413d3e;
 	background: transparent;
 	border: 0;
 	color: $white;
-}
-
-.menu-social-fb:hover{
-	color: #3b5998;
-}
-
-.menu-social-vk:hover{
-	color: #45668e;
-}
-
-.menu-social-in:hover{
-	color: #bc2a8d;
 }
 
 .menu:hover{
@@ -161,11 +153,17 @@ $menugrey: #413d3e;
 
 	.menu-social{
 		margin: 50px 0;
-		padding: 5px 10px;
+		padding: 5px 15px;
 	}
 
 	.menu-social:nth-child(3){
 		border-left: 1px solid $grey;
 		border-right: 1px solid $grey;
+	}
+
+	@media only screen and (max-height: 767px){
+		.menu-full-call, .menu-social{
+			margin: 5px 0;
+		}
 	}
 }

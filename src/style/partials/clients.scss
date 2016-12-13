@@ -1,0 +1,86 @@
+.clients{
+	height: 800px;
+	background: url(../img/bgs/6.png) no-repeat center top;
+	margin: -80px 0 0;
+}
+
+.clients-container{
+	height: 550px;
+	text-align: right;
+	position: relative;
+}
+
+.clients-arrows{
+	@extend .discount-arrows;
+}
+
+.clients-image-place{
+	@extend .discount-image-place;
+	top: 31px;
+	left: -549px;
+}
+
+.clients-slider{
+	@extend .discount-slider;
+	width: 350px;
+}
+
+.clients-slide{
+	@extend .discount-slide;
+	position: relative;
+}
+
+.clients-slide-active{
+	@extend .discount-slide-active;
+}
+
+.clients-slider-title{
+	@extend .discount-slider-title;
+}
+
+.clients-slider-text{
+	@extend .discount-slider-text;
+	height: 100px;
+}
+
+.clients-slider-add{
+	@extend .discount-slider-add;
+}
+
+.clients-description{
+	position: absolute;
+	bottom: -160px;
+	left: -145px;
+}
+
+.clients-description-image{
+	display: inline-block;
+	vertical-align: middle;
+	border: 20px solid rgba(255,255,255,.15);
+	border-radius: 50%;
+	margin: 0 15px 0 0;
+}
+
+.clients-description-text{
+	display: inline-block;
+	vertical-align: middle;
+	width: 200px;
+	font-size: 10pt;
+	text-align: left;
+}
+
+.clients-description-p{
+	color: $darkgrey;
+	margin: 5px 0;
+}
+
+.clients-description-name{
+	color: $red;
+}
+
+.clients-dots{
+	position: absolute;
+	bottom: -150px;
+	right: 250px;
+	text-align: center;
+}

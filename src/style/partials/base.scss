@@ -24,8 +24,16 @@ a, a:hover{
 
 .title{
 	display: inline-block;
-	width: 300px;
+	width: 310px;
 	margin: 130px 0 0;
+}
+
+.title-left{
+	text-align: left;
+}
+
+.title-right{
+	text-align: right;
 }
 
 .title-number{
@@ -35,11 +43,15 @@ a, a:hover{
 
 .title-text{
 	font-family: $pf;
-	font-weight: $reg;
+	font-weight: $med;
 	font-size: 24pt;
 	letter-spacing: 5px;
-	line-height: 25px;
+	line-height: 35px;
 	position: relative;
+	text-transform: uppercase;
+}
+
+.title-left .title-text{
 	&::after{
 		content: '';
 		position: absolute;
@@ -48,4 +60,69 @@ a, a:hover{
 		width: 25px;
 		border: 1px solid $black;
 	}
+}
+
+.title-right .title-text{
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: -15px;
+		right: 0;
+		width: 25px;
+		border: 1px solid $black;
+	}
+}
+
+.title-black .title-text{
+	color: $white;
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: -15px;
+		right: 0;
+		width: 25px;
+		border: 1px solid $white;
+	}
+}
+
+.slider-arrow{
+	display: inline-block;
+	background: $lightgrey;
+	color: $white;
+	padding: 5px 9px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+	&:hover{
+		background: $red;
+	}
+}
+
+.slider-arrow:first-child{
+	margin-right: 20px;
+}
+
+.slider-dots{
+	list-style-type: none;
+}
+
+.slider-dot{
+	display: inline-block;
+	background: $darkgrey;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	margin: 0 7px;
+	cursor: pointer;
+	transition: $speed*2;
+	&:hover{
+		transform: scale(1.5);
+		transition: $speed;
+	}
+}
+
+.slider-dot-active{
+	transform: scale(1.5);
+	background: $red;
+	transition: $speed*2;
 }

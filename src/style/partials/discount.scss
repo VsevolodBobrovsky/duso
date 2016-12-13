@@ -1,0 +1,71 @@
+.discount{
+	height: 745px;
+	background: url(../img/bgs/4.png) no-repeat center top;
+	margin: -80px 0 0;
+}
+
+.discount-container{
+	height: 580px;
+	text-align: right;
+	position: relative;
+}
+
+.discount-arrows{
+	margin: 35px 0 60px;
+}
+
+.discount-image-place{
+	position: absolute;
+	top: 28px;
+	left: -546px;
+}
+
+.discount-slider{
+	width: 400px;
+	margin: 0 0 0 auto;
+}
+
+.discount-slider-title{
+	color: $red;
+	font-size: 14pt;
+	font-weight: $med;
+	letter-spacing: 2px;
+}
+
+.discount-slider-text{
+	color: $darkgrey;
+	font-size: 10pt;
+	height: 105px;
+	line-height: 20px;
+	overflow: hidden;
+	margin: 30px 0;
+}
+
+.discount-slider-add{
+	color: $white;
+	font-size: 10pt;
+	font-weight: $bold;
+	border: 1px solid $red;
+	border-radius: 20px;
+	padding: 5px 25px;
+	text-transform: uppercase;
+	&:hover{
+		background: $red;
+	}
+}
+
+.discount-dots{
+	position: absolute;
+	bottom: -75px;
+	width: 100%;
+	text-align: center;
+}
+
+.discount-slide{
+	display: none;
+}
+
+.discount-slide-active{
+	display: block !important;
+	animation: fading $speed*4;
+}
