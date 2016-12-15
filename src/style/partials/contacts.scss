@@ -1,0 +1,95 @@
+.contacts{
+	height: 610px;
+	position: relative;
+	margin: -65px 0 0;
+}
+
+.contacts-map{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.inner{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.contacts-container{
+	text-align: right;
+	position: relative;
+	height: 100%;
+}
+
+.contacts-container .title{
+	margin: 60px 0 0;
+}
+
+.contacts-toggle{
+	margin: 55px 0 0;
+}
+
+.contacts-toggle-link{
+	display: inline-block;
+	font-size: 16pt;
+	margin: 0 0 0 5px;
+	padding: 10px 15px;
+	color: $grey;
+	cursor: pointer;
+	&:nth-child(2){
+		border-left: 1px solid $grey;
+		border-right: 1px solid $grey;
+	}
+}
+
+.contacts-u{
+	text-decoration: underline;
+}
+
+.contacts-toggle-link-active{
+	color: $black;
+	.fa-map-marker{
+		color: $red;
+	}
+}
+
+.contacts-addr{
+	color: $grey;
+}
+
+.contacts-addr-active .contacts-title{
+	color: $red;
+}
+
+.contacts-text{
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+	display: flex;
+	flex-wrap: row wrap;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.contacts-title{
+	display: inline-block;
+	font-size: 14pt;
+	padding: 0 0 5px;
+	border-bottom: 1px solid $black;
+	font-weight: $med;
+}
+
+.contacts-p{
+	font-size: 12pt;
+	margin: 5px 0;
+}
+
+.contacts-map{
+	display: none;
+}
+
+.contacts-map-active{
+	display: block !important;
+}

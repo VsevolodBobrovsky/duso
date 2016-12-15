@@ -1,0 +1,86 @@
+.blog{
+	height: 726px;
+	background: url(../img/bgs/8.png) no-repeat center top;
+	margin: -50px 0 0;
+	position: relative;
+	z-index: 99;
+}
+
+.blog-container{
+}
+
+.blog-half-big{
+	float: left;
+	width: 440px;
+}
+
+.blog-half-small{
+	float: right;
+	width: 310px;
+	text-align: right;
+}
+
+.blod-slider{
+	height: 340px;
+}
+
+.blog-slide{
+	display: none;
+}
+
+.blog-slide-active{
+	display: block !important;
+	animation: fading $speed*4;
+}
+
+.blog-title{
+	color: $white;
+	font-size: 12pt;
+	font-weight: $med;
+}
+
+.blog-text{
+	margin: 35px 0 0;
+	color: #aaa;
+	font-size: 10pt;
+	line-height: 20px;
+}
+
+.blog-arrows{
+	margin: 140px 0 30px;
+}
+
+.blog-dots{
+	text-align: center;
+	margin: 50px 0 0;
+}
+
+.blog-links{
+	margin: 45px 0 0;
+	height: 400px;
+	position: relative;
+}
+
+.blog-link{
+	display: inline-block;
+	margin: 0 15px 15px 0;
+	font-weight: $med;
+	font-size: 10pt;
+	padding: 5px 10px;
+	border: 1px solid $red;
+	border-radius: 15px;
+	color: $lightgrey;
+	text-transform: uppercase;
+	&:hover{
+		background: $red;
+		color: $white;
+	}
+}
+
+.blog-link-all{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 5px 15px;
+	color: $black;
+}

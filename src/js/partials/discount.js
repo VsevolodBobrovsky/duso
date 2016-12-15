@@ -28,6 +28,7 @@ $('.discount-arrows .slider-arrow').click(function(){
 });
 
 $('.discount-dots .slider-dot').click(function(){
+	if ($(this).hasClass('slider-dot-active') ) return false;
 	var ind = $(this).attr('data-index');
 	$('.discount-slide').removeClass('discount-slide-active');
 	$('.discount-slider').children('.discount-slide').eq(ind).addClass('discount-slide-active');

@@ -4,6 +4,10 @@
 	outline: 0;
 }
 
+img{
+	border: 0;
+}
+
 body{
 	font-family: $rob;
 }
@@ -89,7 +93,7 @@ a, a:hover{
 	display: inline-block;
 	background: $lightgrey;
 	color: $white;
-	padding: 5px 9px;
+	padding: 5px 8px 5px 11px;
 	text-align: center;
 	border-radius: 50%;
 	cursor: pointer;
@@ -100,6 +104,7 @@ a, a:hover{
 
 .slider-arrow:first-child{
 	margin-right: 20px;
+	padding: 5px 11px 5px 8px;
 }
 
 .slider-dots{
@@ -125,4 +130,8 @@ a, a:hover{
 	transform: scale(1.5);
 	background: $red;
 	transition: $speed*2;
+}
+
+.clearfix{
+	clear: both;
 }

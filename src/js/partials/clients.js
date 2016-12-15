@@ -28,6 +28,7 @@ $('.clients-arrows .slider-arrow').click(function(){
 });
 
 $('.clients-dots .slider-dot').click(function(){
+	if ($(this).hasClass('slider-dot-active') ) return false;
 	var ind = $(this).attr('data-index');
 	$('.clients-slide').removeClass('clients-slide-active');
 	$('.clients-slider').children('.clients-slide').eq(ind).addClass('clients-slide-active');

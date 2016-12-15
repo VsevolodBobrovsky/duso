@@ -2,6 +2,8 @@
 	height: 800px;
 	background: url(../img/bgs/6.png) no-repeat center top;
 	margin: -80px 0 0;
+	position: relative;
+	z-index: 99;
 }
 
 .clients-container{
@@ -49,7 +51,7 @@
 
 .clients-description{
 	position: absolute;
-	bottom: -160px;
+	bottom: -125px;
 	left: -145px;
 }
 
