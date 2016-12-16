@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	//= partials/menu.js
 	//= partials/discount.js
 	//= partials/history.js
 	//= partials/clients.js

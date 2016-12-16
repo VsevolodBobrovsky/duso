@@ -1,5 +1,56 @@
 .accordion{
 	height: 1060px;
-	background: url(../img/bgs/2_temp.jpg) no-repeat center top;
-	background-size: cover;
+}
+
+.accordion-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	overflow: hidden;
+}
+
+.accordion-slide{
+	flex: 1;
+	transition: $speed ease-in-out;
+	transform: skewX(-5deg);
+	overflow: hidden;
+	display: flex;
+	border-left: 4px solid #fff;
+	filter: grayscale(100%);
+}
+
+[data-accordion-slide].accordion-slide:hover,
+[data-accordion-slide].accordion-slide:focus{
+	flex: 5;
+	filter: grayscale(0);
+}
+
+.accordion-slide:first-child{
+	border-left: 0;
+	flex: 1.25;
+	margin-left: -3em;
+}
+
+.accordion-slide:last-child{
+	flex: 1.25;
+	margin-right: -3em;
+}
+
+.accordion-inside{
+	transform: skewX(5deg);
+	background-cover: cover;
+	background-position: 50% 50%;
+	margin: 0 -3em;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@for $i from 1 through 5{
+	[data-accordion-slide="#{$i}"] .accordion-inside{
+		background-image: url('../img/imgs/accordion/' + $i + '.jpg');
+	}
 }

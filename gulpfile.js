@@ -65,8 +65,8 @@ gulp.task('js:build', function () {
 gulp.task('style:build', function () {
 	gulp.src(path.src.style)
 		.pipe(sass())
-		//.pipe(prefixer())
-		//.pipe(cssmin())
+		.pipe(prefixer())
+		.pipe(cssmin())
 		.pipe(gulp.dest(path.build.css))
 		.pipe(reload({stream: true}));
 });
@@ -78,12 +78,12 @@ gulp.task('fonts:build', function() {
 
 gulp.task('image:build', function () {
 	gulp.src(path.src.img)
-		/*.pipe(imagemin({
+		.pipe(imagemin({
 			progressive: true,
 			use: [imageminJpegtran()],
 			arithmetic: true,
 			interlaced: true
-		}))*/
+		}))
 		.pipe(gulp.dest(path.build.img))
 		.pipe(reload({stream: true}));
 });
