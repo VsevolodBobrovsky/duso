@@ -89,6 +89,8 @@ $menugrey: #413d3e;
 	width: 220px;
 	height: 100%;
 	list-style-type: none;
+	opacity: 0;
+	box-shadow: 5px 5px 10px rgba(141,19,31,.75);
 }
 
 .menu-nav-item{
@@ -101,11 +103,21 @@ $menugrey: #413d3e;
 	text-align: left;
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
+	transition: $speed;
 	&:hover{
 		color: $white;
 		border-top: 1px solid $white;
 		border-bottom: 1px solid $white;
+		transition: $speed;
 	}
+}
+
+.menu-nav-item-link{
+	color: #aaa;
+}
+
+.menu-nav-item:hover > .menu-nav-item-link{
+	color: $white;
 }
 
 .menu-subtitle{
@@ -132,6 +144,7 @@ $menugrey: #413d3e;
 	text-align: left;
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
+	cursor: pointer;
 	&:hover{
 		color: $white;
 		border-top: 1px solid $red;
@@ -155,6 +168,14 @@ $menugrey: #413d3e;
 	background: linear-gradient(to left, $black, #3b0004);
 	
 	@extend .menu-hover;
+}
+
+.menu-nav-link:hover > .menu-nav-list{
+	opacity: 1;
+}
+
+.menu-nav-item:hover > .menu-nav-list{
+	opacity: 1;
 }
 
 .menu-hover{

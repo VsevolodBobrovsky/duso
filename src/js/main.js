@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	//= partials/menu.js
+	//= partials/lang.js
 	//= partials/discount.js
 	//= partials/history.js
 	//= partials/clients.js
