@@ -1,3 +1,17 @@
+$black: #000;
+$white: #fff;
+$lightgrey: #444;
+$grey: #666;
+$darkgrey: #888;
+$red: #ed1c24;
+
+$speed: .25s;
+
+$rob: 'Roboto', sans-serif;
+$robcon: 'Roboto Condensed', sans-serif;
+$pf: 'PFDinTextCondPro';
+$myriad: 'Myriad Pro';
+
 @import 'product/reset';
 @import 'product/bootstrap3';
 @import 'product/jquery.mCustomScrollbar';

@@ -3,12 +3,14 @@ body {
   font-size: 14px;
 }
 .numbers {
-  font: 14px 'Roboto' 500;
+  font: 14px 'Roboto';
+  font-weight: 500;
   color: #ed1c24;
   letter-spacing: 2px;
 }
 .titles {
-  font: 28px 'Roboto' 500;
+  font: 28px $pf;
+  font-weight: 500;
   color: #000;
   letter-spacing: 3px;
   position: relative;
@@ -43,12 +45,14 @@ body {
   margin-top: 50px;
 }
 .section1 .about-block .number {
-  font: 14px 'Roboto' 500;
+  font: 14px 'Roboto';
+  font-weight: 500;
   color: #ed1c24;
   letter-spacing: 2px;
 }
 .section1 .about-block .title {
-  font: 28px 'Roboto' 500;
+  font: 28px $pf;
+  font-weight: 500;
   color: #000;
   letter-spacing: 3px;
   position: relative;
@@ -76,14 +80,16 @@ body {
   background-position: top center;
 }
 .section2 .advantages .number {
-  font: 14px 'Roboto' 500;
+  font: 14px 'Roboto';
+  font-weight: 500;
   color: #ed1c24;
   letter-spacing: 2px;
   margin-top: 58px;
   color: #fff;
 }
 .section2 .advantages .title-header {
-  font: 28px 'Roboto' 500;
+  font: 28px $pf;
+  font-weight: 500;
   color: #000;
   letter-spacing: 3px;
   position: relative;
@@ -117,7 +123,8 @@ body {
   cursor: pointer;
 }
 .section2 .tab-block .tab-panel .tab-item .number {
-  font: 14px 'Roboto' 500;
+  font: 14px 'Roboto';
+  font-weight: 500;
   color: #ed1c24;
   letter-spacing: 2px;
   font-size: 10px;
@@ -125,7 +132,7 @@ body {
   margin-top: 0;
 }
 .section2 .tab-block .tab-panel .tab-item .title {
-  font: 18px 'Roboto' 500;
+  font: 18px 'Roboto';
   color: #333;
   margin-top: 4px;
 }
@@ -172,14 +179,16 @@ body {
   clear: both;
 }
 .section2 .specifications .number {
-  font: 14px 'Roboto' 500;
+  font: 14px 'Roboto';
+  font-weight: 500;
   color: #ed1c24;
   letter-spacing: 2px;
   text-align: right;
   margin-top: 58px;
 }
 .section2 .specifications .title-header {
-  font: 28px 'Roboto' 500;
+  font: 28px $pf;
+  font-weight: 500;
   color: #000;
   letter-spacing: 3px;
   position: relative;
@@ -227,12 +236,14 @@ body {
   margin-top: 98px;
 }
 .section3 .left-block .number {
-  font: 14px 'Roboto' 500;
+  font: 14px 'Roboto';
+  font-weight: 500;
   color: #ed1c24;
   letter-spacing: 2px;
 }
 .section3 .left-block .title-header {
-  font: 28px 'Roboto' 500;
+  font: 28px $pf;
+  font-weight: 500;
   color: #000;
   letter-spacing: 3px;
   position: relative;
@@ -255,12 +266,14 @@ body {
   margin-top: 240px;
 }
 .section3 .content-block h2 {
-  font: 16px 'Roboto' 500;
+  font: 16px 'Roboto';
+  font-weight: 500;
   color: #000;
   margin-bottom: 14px;
 }
 .section3 .content-block h3 {
-  font: 14px 'Roboto' 500;
+  font: 14px 'Roboto';
+  font-weight: 500;
   margin-bottom: 14px;
 }
 .section3 .content-block p {
@@ -354,14 +367,16 @@ body {
   background: #333333;
 }
 .section4 .wrapper .cost-wrapp .cost-block .number {
-  font: 14px 'Roboto' 500;
+  font: 14px 'Roboto';
+  font-weight: 500;
   color: #ed1c24;
   letter-spacing: 2px;
   text-align: right;
   margin-top: 86px;
 }
 .section4 .wrapper .cost-wrapp .cost-block .title-header {
-  font: 28px 'Roboto' 500;
+  font: 28px $pf;
+  font-weight: 500;
   color: #000;
   letter-spacing: 3px;
   position: relative;
@@ -374,7 +389,7 @@ body {
   height: 2px;
   background: #808080;
   position: absolute;
-  top: 55px;
+  top: 79px;
 }
 .section4 .wrapper .cost-wrapp .cost-block .title-header:after {
   right: 0;
@@ -394,7 +409,8 @@ body {
   height: 28px;
   width: 180px;
   float: left;
-  font: 16px 'Roboto' 500;
+  font: 16px 'Roboto';
+  font-weight: 500;
   text-align: right;
   color: #fff;
   padding: 5px 0;
@@ -417,7 +433,8 @@ body {
   border: none;
   border-bottom: 1px solid #808080;
   color: #fff;
-  font: 14px 'Roboto' 500;
+  font: 14px 'Roboto';
+  font-weight: 500;
   padding-bottom: 6px;
   margin-top: 21px;
 }
@@ -438,7 +455,8 @@ body {
   margin-bottom: 26px;
 }
 .section5 .header .number {
-  font: 14px 'Roboto' 500;
+  font: 14px 'Roboto';
+  font-weight: 500;
   color: #ed1c24;
   letter-spacing: 2px;
   float: left;
@@ -446,7 +464,8 @@ body {
   margin-right: 20px;
 }
 .section5 .header .title {
-  font: 28px 'Roboto' 500;
+  font: 28px $pf;
+  font-weight: 500;
   color: #000;
   letter-spacing: 3px;
   position: relative;
@@ -529,7 +548,8 @@ body {
   border-right: none;
 }
 .footer .phones {
-  font: 12px 'Roboto' 500;
+  font: 12px 'Roboto';
+  font-weight: 500;
   text-transform: uppercase;
   color: #fff;
   margin-top: 43px;
@@ -612,4 +632,69 @@ body {
 
 .lang-link:hover, .lang-link:focus, .menu-social:hover, .footer-social-link:hover{
     color: #fff;
+}
+
+.titles-additional{
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 40px 20px 40px 0;
+  &:after{
+    display: none !important;
+  }
+}
+
+.product-container{
+  width: 100%;
+  height: 620px;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  overflow: hidden;
+}
+
+.product-slide{
+  flex: 1;
+  transition: $speed ease-in-out;
+  transform: skewX(-5deg);
+  overflow: hidden;
+  display: flex;
+  border-left: 4px solid #fff;
+}
+
+[data-product-slide].product-slide:hover,
+[data-product-slide].product-slide:focus{
+  flex: 5;
+}
+
+.product-slide:first-child{
+  border-left: 0;
+  flex: 1.25;
+  margin-left: -3em;
+}
+
+.product-slide:last-child{
+  flex: 1.25;
+  margin-right: -3em;
+}
+
+.product-inside{
+  transform: skewX(5deg);
+  background-cover: cover;
+  background-position: 50% 50%;
+  margin: 0 -3em;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14pt;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: $white;
+}
+
+@for $i from 1 through 4{
+  [data-product-slide="#{$i}"] .product-inside{
+    background-image: url('../img/product/' + $i + '.jpg');
+  }
 }
