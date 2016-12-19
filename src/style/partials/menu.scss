@@ -64,6 +64,9 @@ $menugrey: #413d3e;
 	display: block;
 	color: $grey;
 	margin: 15px 0;
+	&:hover{
+		color: $white;
+	}
 }
 
 .menu-full-call{

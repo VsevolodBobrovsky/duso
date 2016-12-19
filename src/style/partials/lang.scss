@@ -1,7 +1,7 @@
 .lang-block{
-	position: absolute;
+	position: fixed;
 	top: 35px;
-	right: 45px;
+	right: 35px;
 	z-index: 999;
 }
 
@@ -10,13 +10,13 @@
 	color: $white;
 	background: $darkgrey;
 	border-radius: 50%;
-	margin: 5px 0;
+	margin: 10px 0;
 	padding: 10px;
-	font-size: 14pt;
+	font-size: 12pt;
 	font-weight: $bold;
 	opacity: 0;
 	&:hover{
-		background: $lightgrey;
+		background: $grey;
 	}
 }
 

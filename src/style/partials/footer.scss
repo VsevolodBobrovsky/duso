@@ -25,6 +25,9 @@
 	color: $grey;
 	padding: 5px 15px;
 	font-size: 14pt;
+	&:hover{
+		color: $white;
+	}
 }
 
 .footer-social-link:nth-child(2){
