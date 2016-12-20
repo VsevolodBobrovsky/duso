@@ -14,7 +14,7 @@
 .accordion-slide{
 	flex: 1;
 	transition: $speed ease-in-out;
-	transform: skewX(-5deg);
+	transform: skewX(-8deg);
 	overflow: hidden;
 	display: flex;
 	border-left: 4px solid #fff;
@@ -51,7 +51,7 @@
 
 @for $i from 1 through 5{
 	[data-accordion-slide="#{$i}"] .accordion-inside{
-		background-image: url('../img/imgs/accordion/' + $i + '.jpg');
+		background-image: url('../img/imgs/' + $i + '_acc.jpg');
 	}
 }
 
@@ -93,7 +93,7 @@
 }
 
 .accordion-main{
-	background: url(../img/imgs/accordion/hover_1.png) no-repeat center center;
+	background: url(../img/imgs/acc_hover_1.png) no-repeat center center;
 }
 
 .accordion-slide:hover{
