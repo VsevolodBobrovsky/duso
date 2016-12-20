@@ -1,0 +1,62 @@
+.business{
+	display: flex;
+	height: 1080px;
+	background: url(../img/bgs/9.jpg) no-repeat center top;
+	flex-flow: column wrap;
+	justify-content: center;
+	position: relative;
+}
+
+.business-phone{
+	position: absolute;
+	top: 48px;
+	right: 96px;
+	font-family: $myriad;
+	font-size: 22pt;
+	color: $grey;
+}
+
+.business-container{
+	width: 370px;
+	padding: 0 500px 0 0;
+	text-align: center;
+}
+
+.business-top{
+	font-family: $pf;
+	font-weight: $med;
+}
+
+.business-top-red{
+	color: $red;
+	font-size: 20pt;
+	margin: 0 0 10px;
+	letter-spacing: 5px;
+}
+
+.business-top-bigger{
+	font-size: 60pt;
+	line-height: 65px;
+	letter-spacing: 5px;
+}
+
+.business-top-text{
+	font-size: 32pt;
+	letter-spacing: 5px;
+	line-height: 45px;
+}
+
+.business-top-img{
+	width: 330px;
+}
+
+.business-bottom{
+	margin: 200px 0 0;
+	font-size: 14pt;
+	font-weight: $med;
+	border-left: 1px solid $red;
+	border-right: 1px solid $red;
+	color: $grey;
+	padding: 5px 20px;
+	letter-spacing: 4px;
+}
