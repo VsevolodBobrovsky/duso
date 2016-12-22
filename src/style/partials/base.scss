@@ -17,6 +17,10 @@ a, a:hover{
 	transition: $speed;
 }
 
+input[type="submit"], input[type="submit"]:hover{
+	transition: $speed;
+}
+
 .wrapper{
 	width: 100%;
 }
@@ -72,6 +76,17 @@ a, a:hover{
 		position: absolute;
 		bottom: -15px;
 		right: 0;
+		width: 25px;
+		border: 1px solid $black;
+	}
+}
+
+.title-center .title-text{
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: -15px;
+		left: 47%;
 		width: 25px;
 		border: 1px solid $black;
 	}
