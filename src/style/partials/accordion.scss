@@ -14,7 +14,7 @@
 .accordion-slide{
 	flex: 1;
 	transition: $speed ease-in-out;
-	transform: skewX(-8deg);
+	transform: skewX(-7deg);
 	overflow: hidden;
 	display: flex;
 	border-left: 4px solid #fff;
@@ -39,7 +39,6 @@
 }
 
 .accordion-inside{
-	transform: skewX(5deg);
 	background-cover: cover;
 	background-position: 50% 50%;
 	margin: 0 -3em;
@@ -58,6 +57,10 @@
 .accordion-small{
 	text-align: center;
 	transition: $speed;
+}
+
+.accordion-small, .accordion-big{
+	transform: skewX(7deg);
 }
 
 .accordion-small-icon, .accordion-big-icon{

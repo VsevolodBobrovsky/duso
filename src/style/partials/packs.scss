@@ -1,0 +1,39 @@
+.packs{
+	height: 645px;
+	background: url(../img/bgs/17.png) no-repeat center top;
+}
+
+.packs-container{
+	position: relative;
+}
+
+.packs-title{
+	position: absolute;
+	top: 80px;
+	right: 0;
+	margin: 0;
+}
+
+.packs-block{
+	display: inline-block;
+	vertical-align: top;
+	width: 210px;
+	margin: 115px 20px 0 0;
+	text-align: center;
+}
+
+.packs-block-title{
+	font-size: 14pt;
+	font-weight: $med;
+	color: $white;
+}
+
+.packs-block-img{
+	width: 100%;
+	height: 345px;
+	margin: 20px 0 30px;
+}
+
+.packs-block-link{
+	@extend .discount-slider-add;
+}

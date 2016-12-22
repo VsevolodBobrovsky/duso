@@ -1,0 +1,50 @@
+.steps{
+	height: 645px;
+	background: url(../img/bgs/13.png) no-repeat center top;
+}
+
+.steps-container{
+	text-align: right;
+	position: relative;
+}
+
+.steps-image{
+	position: absolute;
+	top: 0;
+	left: -550px;
+}
+
+.steps-arrows{
+	margin: 60px 0 80px;
+}
+
+.steps-slider{
+	width: 285px;
+	margin: 0 0 0 auto;
+	text-align: right;
+}
+
+.steps-slide{
+	display: none;
+}
+
+.steps-slide-active{
+	display: block !important;
+	animation: fading $speed*4;
+}
+
+.steps-slide-title{
+	margin: 0 0 25px;
+	font-family: $pf;
+	font-weight: $med;
+	letter-spacing: 5px;
+	font-size: 20pt;
+	color: $red;
+	text-transform: uppercase;
+}
+
+.steps-slide-text{
+	font-size: 13pt;
+	color: #aaa;
+	line-height: 25px;
+}

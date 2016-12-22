@@ -1,0 +1,39 @@
+.benefits{
+	height: 650px;
+	background: url(../img/bgs/15.png) no-repeat center top;
+}
+
+.benefits-container{
+	text-align: right;
+}
+
+.benefits-title{
+	margin: 90px 0 0;
+}
+
+.benefits-box{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.benefits-block{
+	width: 275px;
+	margin: 80px 0 20px;
+	text-align: left;
+}
+
+.benefits-img{
+	display: inline-block;
+	vertical-align: top;
+	width: 70px;
+}
+
+.benefits-text{
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	font-size: 11pt;
+	color: $white;
+}

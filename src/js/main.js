@@ -17,4 +17,6 @@ $(document).ready(function(){
 	//= partials/saloons.js
 
 	//= partials/contacts.js
+
+	$('.contacts .title-number').text($('section').length);
 });

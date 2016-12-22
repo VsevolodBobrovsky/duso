@@ -28,7 +28,7 @@ a, a:hover{
 
 .title{
 	display: inline-block;
-	width: 310px;
+	width: 405px;
 	margin: 130px 0 0;
 }
 
@@ -130,6 +130,10 @@ a, a:hover{
 	transform: scale(1.5);
 	background: $red;
 	transition: $speed*2;
+}
+
+.red{
+	color: $red;
 }
 
 .clearfix{
