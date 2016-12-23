@@ -1,14 +1,169 @@
 .hr{
 	background: url(../img/bgs/12.png) no-repeat center top;
 	height: 690px;
+	margin: 0 0 -35px;
+	position: relative;
+	z-index: 99;
 }
 
 .hr-container{
 	position: relative;
+	padding: 180px 0 0;
 }
 
 .hr-title{
 	position: absolute;
 	top: 0;
 	left: 0;
+	margin: 55px 0 0;
+}
+
+.hr-add-title{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #ccc;
+	margin: 85px 0 0;
+	font-size: 26pt;
+	font-family: $pf;
+	font-weight: $med;
+	letter-spacing: 3px;
+}
+
+.hr-book-place{
+	width: 560px;
+	float: left;
+	margin: 30px 0;
+}
+
+.hr-book-half{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.hr-book-left{
+	width: 300px;
+}
+
+.hr-book-img{
+	height: 330px;
+}
+
+.hr-book-right{
+	width: 215px;
+	margin: 0 0 0 20px;
+}
+
+.hr-book-title{
+	font-size: 14pt;
+	font-weight: $bold;
+	margin: 0 0 25px;
+}
+
+.hr-book-p{
+	color: $darkgrey;
+	margin: 0 0 25px;
+}
+
+.hr-photo-place{
+	display: inline-block;
+	width: 140px;
+	margin: 0 0 0 40px;
+	text-align: center;
+}
+
+.hr-photo-link{
+	display: block;
+	color: $black;
+	font-weight: $med;
+	font-size: 10pt;
+	line-height: 20px;
+}
+
+.hr-photo-link-active{
+	color: $red;
+}
+
+.hr-photo-link:first-child{
+	margin: 0 0 20px;
+}
+
+.hr-photo-img{
+	display: block;
+	margin: 0 auto 15px;
+}
+
+.hr-book-nav{
+	margin: 35px 0 0;
+}
+
+.hr-nav-link{
+	padding: 5px 10px;
+	letter-spacing: 2px;
+	font-weight: $med;
+	font-size: 10pt;
+	color: $white;
+	background: $red;
+	border: 1px solid $red;
+	border-radius: 15px;
+	margin: 0 15px;
+	&:hover{
+		background: none;
+		color: $red;
+	}
+}
+
+.hr-arrows{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.hr-arrows .slider-arrow:first-child{
+	margin: 0 90px 0 0;
+}
+
+.hr-slider{
+	position: relative;
+	height: 310px;
+}
+
+.hr-background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 160px;
+}
+
+.hr-surface{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.5);
+	z-index: 2;
+}
+
+.hr-shadow{
+	position: absolute;
+	top: 0;
+	right: 104px;
+	width: 134px;
+	z-index: 3;
+}
+
+.hr-front{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 4;
+	width: 190px;
+}
+
+.hr-author{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 5;
+	width: 75px;
 }

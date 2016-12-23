@@ -20,6 +20,7 @@ $('.question-dots .slider-dot').click(function(){
 
 $('.question').bind('mousewheel', function(e){
 	var indPrev = $('.question-slide-active').index() - 1;
+	if(indPrev < 0) indPrev = 0;
 	var indNext = $('.question-slide-active').index() + 1;
 	$('.question-dots .slider-dot').removeClass('slider-dot-active');
 	$('.question-slide').removeClass('question-slide-active');
@@ -30,16 +31,15 @@ $('.question').bind('mousewheel', function(e){
 		$('.question-slider').children('.question-slide').eq(indNext).addClass('question-slide-active');
 	}
 	var ind = $('.question-slide-active').index();
-	console.log(ind);
 	if(ind < 0) {
 		ind = 0;
 		$('.question-slider').children('.question-slide').eq(ind).addClass('question-slide-active');
 	}
 	$('.question-dots .slider-dot[data-index="' + ind + '"]').addClass('slider-dot-active');
-	if(indNext < dotsQuan) e.preventDefault()
-	else{
+	if(indNext == dotsQuan){
 		$('html, body').animate({
 			scrollTop: $( $('.question').next() ).offset().top
 		}, 500);
-	}
+	} 
+	else e.preventDefault()
 });
