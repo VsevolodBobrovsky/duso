@@ -67,7 +67,7 @@
 
 .hr-photo-place{
 	display: inline-block;
-	width: 140px;
+	width: 155px;
 	margin: 0 0 0 40px;
 	text-align: center;
 }
@@ -76,12 +76,11 @@
 	display: block;
 	color: $black;
 	font-weight: $med;
-	font-size: 10pt;
+	font-size: 11pt;
 	line-height: 20px;
-}
-
-.hr-photo-link-active{
-	color: $red;
+	&:hover{
+		color: $red;
+	}
 }
 
 .hr-photo-link:first-child{
@@ -91,6 +90,14 @@
 .hr-photo-img{
 	display: block;
 	margin: 0 auto 15px;
+	border: 10px solid #ccc;
+	border-radius: 50%;
+	transition: $speed;
+}
+
+.hr-photo-link:hover .hr-photo-img{
+	border: 10px solid $red;
+	transition: $speed;
 }
 
 .hr-book-nav{
@@ -129,10 +136,11 @@
 
 .hr-background{
 	position: absolute;
-	top: 0;
+	top: 50px;
 	left: 0;
 	z-index: 1;
-	width: 160px;
+	width: 140px;
+	filter: grayscale(100%);
 }
 
 .hr-surface{
@@ -146,8 +154,8 @@
 
 .hr-shadow{
 	position: absolute;
-	top: 0;
-	right: 104px;
+	top: -15px;
+	right: 100px;
 	width: 134px;
 	z-index: 3;
 }
