@@ -18,17 +18,21 @@ $('.question-dots .slider-dot').click(function(){
 	$(this).addClass('slider-dot-active');
 });
 
-$('.question').bind('mousewheel', function(e){
+var mousewheelevent = (/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel";
+
+$('.question').bind(mousewheelevent, function(e){
 	var indPrev = $('.question-slide-active').index() - 1;
 	if(indPrev < 0) indPrev = 0;
 	var indNext = $('.question-slide-active').index() + 1;
 	$('.question-dots .slider-dot').removeClass('slider-dot-active');
 	$('.question-slide').removeClass('question-slide-active');
-	if(e.originalEvent.wheelDelta / 120 > 0) {
-		$('.question-slider').children('.question-slide').eq(indPrev).addClass('question-slide-active');
+	if(mousewheelevent == 'DOMMouseScroll'){
+		if(e.originalEvent.detail < 0) $('.question-slider').children('.question-slide').eq(indPrev).addClass('question-slide-active')
+		else $('.question-slider').children('.question-slide').eq(indNext).addClass('question-slide-active');
 	}
-	else{
-		$('.question-slider').children('.question-slide').eq(indNext).addClass('question-slide-active');
+	if(mousewheelevent == 'mousewheel'){
+		if(e.originalEvent.wheelDelta / 120 > 0) $('.question-slider').children('.question-slide').eq(indPrev).addClass('question-slide-active')
+		else $('.question-slider').children('.question-slide').eq(indNext).addClass('question-slide-active');
 	}
 	var ind = $('.question-slide-active').index();
 	if(ind < 0) {
