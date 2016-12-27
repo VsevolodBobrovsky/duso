@@ -14,17 +14,17 @@
 .accordion-slide{
 	flex: 1;
 	transition: $speed ease-in-out;
-	transform: skewX(-7deg);
+	transform: skewX(-5deg);
 	overflow: hidden;
 	display: flex;
 	border-left: 4px solid #fff;
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
 }
 
 [data-accordion-slide].accordion-slide:hover,
 [data-accordion-slide].accordion-slide:focus{
 	flex: 5;
-	filter: grayscale(0);
+	/* filter: grayscale(0); */
 }
 
 .accordion-slide:first-child{
@@ -56,11 +56,11 @@
 
 .accordion-small{
 	text-align: center;
-	transition: $speed;
+	transition: $speed ease-in-out;
 }
 
 .accordion-small, .accordion-big{
-	transform: skewX(7deg);
+	transform: skewX(5deg);
 }
 
 .accordion-small-icon, .accordion-big-icon{
@@ -81,7 +81,6 @@
 
 .accordion-big{
 	display: none;
-	transition: $speed;
 	width: 500px;
 	height: 500px;
 	position: relative;
