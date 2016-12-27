@@ -1,0 +1,32 @@
+.saloons{
+	height: 645px;
+	position: relative;
+	z-index: 99;
+}
+
+.saloons-title{
+	background: url(../img/bgs/19.png) no-repeat center top;
+	width: 100%;
+	height: 160px;
+	margin: 2px 0 0;
+	padding: 40px 0 0;
+	text-align: center;
+	position: relative;
+	z-index: 100;
+}
+
+.saloons-title .title-text{
+	font-size: 16pt;
+	line-height: 28px;
+	&:after{
+		display: none;
+	}
+}
+
+.saloons-map{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+}

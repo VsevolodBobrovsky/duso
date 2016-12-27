@@ -1,6 +1,8 @@
 .packs{
 	height: 645px;
 	background: url(../img/bgs/17.png) no-repeat center top;
+	position: relative;
+	z-index: 99;
 }
 
 .packs-container{
