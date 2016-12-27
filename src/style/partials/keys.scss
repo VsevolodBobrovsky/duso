@@ -1,0 +1,69 @@
+.keys{
+	height: 665px;
+	background: url(../img/bgs/18.png) no-repeat center top;
+	margin: -1px 0 -22px;
+}
+
+.keys-container{
+	padding: 40px 0 0;
+	position: relative;
+}
+
+.keys-steps{
+	width: 300px;
+	margin: 0 0 0 auto;
+	list-style-type: none;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 2px;
+		height: 550px;
+		background: $superlightgrey;
+	}
+}
+
+.keys-step{
+	display: inline-block;
+	position: relative;
+	width: 120px;
+	clear: both;
+	margin: 3px 0;
+	font-size: 10pt;
+	color: #1a1a1a;
+	float: right;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -34px;
+		width: 10px;
+		height: 10px;
+		background: $red;
+		border-radius: 50%;
+	}
+}
+
+.keys-step:nth-child(even){
+	float: left;
+	text-align: right;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 146px;
+		width: 10px;
+		height: 10px;
+		background: $red;
+		border-radius: 50%;
+	}
+}
+
+.keys-number{
+	font-family: $pf;
+	font-weight: $med;
+	font-size: 26pt;
+	color: $darkgrey;
+}
