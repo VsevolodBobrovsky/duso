@@ -1,4 +1,5 @@
 @import '../product/jquery.mCustomScrollbar';
+@import '../product/slick';
 
 .portfolio{
 	height: 645px;
@@ -16,14 +17,21 @@
 	margin: 60px 0 0;
 }
 
+.portfolio-arrows{
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+
 .portfolio-half{
-	margin: 165px 0 0;
+	margin: 190px 0 0;
 	width: 390px;
 	height: 430px;
 }
 
 .portfolio-half-left{
 	float: left;
+	position: relative;
 }
 
 .portfolio-half-right{
@@ -83,4 +91,36 @@
 
 .portfolio-half-left .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .portfolio-half-left .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar, .portfolio-half-left .mCSB_scrollTools .mCSB_draggerRail{
 	background: $darkgrey !important;
+}
+
+.portfolio-slider{
+	@extend .discount-slider;
+	width: auto;
+}
+
+.portfolio-slide{
+	@extend .discount-slide;
+}
+
+.portfolio-slide-active{
+	@extend .discount-slide-active;
+}
+
+.portfolio-img{
+	margin: 0 auto;
+}
+
+.portfolio-inner-slider-arrow-left, .portfolio-inner-slider-arrow-right{
+	position: absolute;
+	top: 75px;
+	color: $darkgrey;
+	cursor: pointer;
+}
+
+.portfolio-inner-slider-arrow-left{
+	left: -2px;
+}
+
+.portfolio-inner-slider-arrow-right{
+	right: -2px;
 }
