@@ -1,20 +1,47 @@
-@media screen and (max-width: 767px){
-	.container{
-		width: 650px;
-		box-sizing: border-box;
-		margin: 0 0 0 70px;
+@media screen and (max-width: 1176px){
+	body{
+		overflow-x: hidden;
 	}
 
-	.accordion-big{
-		width: 350px;
+	.discount-slider{
+		width: 280px;
+	}
+
+	.clients-image-place{
+		left: -575px;
+	}
+
+	.container{
+		width: 710px;
+	}
+
+	.clients{
+		margin-top: -91px;
+	}
+
+	.clients-dots{
+		bottom: -175px;
+	}
+
+	.blog-half-big{
+		width: 330px;
+	}
+
+	.blog-half-small{
+		width: 285px;
 	}
 
 	.title-text{
-		font-size: 20pt;
+		font-size: 19pt;
 	}
 
 	.business-container{
-		width: 120%;
+		padding: 0;
+	}
+
+	.business-bottom{
+		width: 300px;
+		margin: 200px auto 0;
 	}
 
 	.hr-book-left{
@@ -56,7 +83,7 @@
 	}
 
 	.steps-image{
-		left: -680px;
+		left: -605px;
 	}
 
 	.calc-half{
@@ -76,12 +103,12 @@
 		letter-spacing: 0;
 	}
 
-	.benefits-block{
-		margin-top: 70px;
+	.portfolio-slider{
+		width: 100%;
 	}
 
 	.portfolio-half{
-		width: 300px;
+		width: 330px;
 	}
 
 	.portfolio-img{
@@ -101,12 +128,8 @@
 		letter-spacing: 0px;
 	}
 
-	.keys-image{
-		left: -670px;
-	}
-
 	.keys-bg{
-		left: -685px;
+		left: -600px;
 	}
 
 	.footer-social, .footer-contacts{

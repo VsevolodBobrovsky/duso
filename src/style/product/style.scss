@@ -64,7 +64,7 @@ body {
   height: 2px;
   background: #808080;
   position: absolute;
-  top: 79px;
+  bottom: -10px;
 }
 .section1 .about-block .title:after {
   left: 0;
@@ -698,8 +698,225 @@ body {
   color: $white;
 }
 
+.tab-panel-mobile-text, .product-arrow-mobile{
+  display: none;
+}
+
 @for $i from 1 through 4{
   [data-product-slide="#{$i}"] .product-inside{
     background-image: url('../img/product/' + $i + '.jpg');
+  }
+}
+
+@media only screen and (max-width: 1176px){
+  .container{
+    padding: 0 0 0 50px;
+  }
+
+  .section2 .tab-block .tab-panel{
+    width: 110px;
+  }
+
+  .section2 .specifications .specifications-block{
+    font-size: 8pt;
+  }
+
+  .section2 .tab-block .tab-panel .tab-item .title{
+    font-size: 9pt;
+  }
+
+  .footer-social, .footer-contacts{
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .container{
+    padding: 0 20px !important;
+    width: 100%;
+  }
+
+  .title{
+    width: 100%;
+  }
+
+  .about-block p{
+    display: none;
+  }
+
+  .section1{
+    background-position: bottom center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .section2{
+    height: auto;
+    background: none;
+    text-align: center;
+  }
+
+  .tab-item, .specifications-block{
+    text-align: left;
+  }
+
+  .section2 .tab-block .tab-panel{
+    width: auto;
+  }
+
+  .section2 .tab-block .tab-content{
+    display: none;
+  }
+
+  .advantages{
+    background: #c1272d;
+    padding-bottom: 30px;
+  }
+
+  .specifications{
+    background: #333333;
+    padding-bottom: 30px;
+  }
+
+  .section1 .about-block .title::after, .section2 .advantages .title-header:after, .section2 .specifications .title-header:after, .section3 .left-block .title-header:after, .section4 .wrapper .cost-wrapp .cost-block .title-header:after, .section2 .specifications .title-header:after{
+    left: 45% !important;
+  }
+
+  .section4 .wrapper .cost-wrapp .cost-block .title-header, .section4 .wrapper .cost-wrapp .cost-block .number, .section2 .specifications .title-header, .section2 .specifications .number{
+    text-align: center;
+  }
+
+  .tab-panel-mobile-text{
+    display: block;
+  }
+
+  .section2 .tab-block .tab-panel{
+    width: 100%;
+  }
+
+  .section2 .tab-block .tab-panel .tab-item, .section2 .tab-block .tab-panel .tab-item .number, .section2 .tab-block .tab-panel .tab-item .title{
+    color: #fff;
+  }
+
+  .section3{
+    height: auto;
+    text-align: center;
+  }
+
+  .footer-container{
+    width: auto;
+  }
+
+  .footer-logo, .footer-contacts, .nav-block, .bg, .gray, .slider-cost{
+    display: none;
+  }
+
+  .footer-social{
+    text-align: left;
+  }
+
+  .section4{
+    height: auto;
+  }
+
+  .section4 .wrapper .cost-wrapp{
+    position: relative;
+  }
+
+  .product-container{
+    height: auto;
+    display: block;
+  }
+
+  .product-small{
+    display: none;
+  }
+
+  .product-slide{
+    height: 90px;
+    transform: skewX(0);
+  }
+
+  .product-inside{
+    background-size: 100%;
+  }
+
+  .section3 .right-block .content-block{
+    margin-top: 0;
+  }
+
+  .titles-additional{
+    margin: 0;
+  }
+
+  .titles-additional-title{
+    text-align: center;
+    position: relative;
+    padding: 20px 0 40px;
+  }
+
+  .titles-additional-title:after{
+      content: '';
+      width: 24px;
+      height: 2px;
+      background: #808080;
+      position: absolute;
+      top: 120px;
+      left: 45%;
+  }
+
+  .section3 .left-block{
+    margin-top: 30px;
+  }
+
+  .section4 .wrapper .cost-wrapp .cost-block .you-tube-price-block .you-tube-icon, .section4 .wrapper .cost-wrapp .cost-block .you-tube-price-block .price{
+    float: none;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .section4 .wrapper .cost-wrapp .cost-block .form-block{
+    margin-top: 0;
+  }
+
+  .numbers{
+    display: block;
+  }
+
+  .product-inside{
+    position: relative;
+  }
+
+  .product-arrow-mobile{
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 25px;
+    transform: skewX(-25deg);
+    background: #333;
+    padding: 10px 35px;
+    font-size: 40pt;
+    color: #fff;
+    transition: .25s;
+  }
+
+  .product-inside:hover .product-arrow-mobile{
+    background: #ed1c24;
+    color: #fff;
+    transition: .25s;
+  }
+
+  .product-arrow-mobile-icon{
+    transform: skewX(22deg);
+  }
+
+  .product-slide:last-child{
+    margin-right: 0;
+  }
+
+  .menu{
+    display: none;
   }
 }
