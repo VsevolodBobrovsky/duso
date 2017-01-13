@@ -1,6 +1,6 @@
 //= ../product/jquery.mCustomScrollbar.js
 //= ../product/slick.min.js
-$('.portfolio-half-left').mCustomScrollbar();
+$('.portfolio-break').mCustomScrollbar();
 $('.portfolio-inner-slider').slick({
 	prevArrow: $('.portfolio-inner-slider-arrow-left'),
 	nextArrow: $('.portfolio-inner-slider-arrow-right')

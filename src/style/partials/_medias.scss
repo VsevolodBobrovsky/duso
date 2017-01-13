@@ -120,7 +120,7 @@
 	}
 
 	.portfolio-inner-slider-arrow-left, .portfolio-inner-slider-arrow-right{
-		top: 50px;
+		top: 70px;
 	}
 
 	.packs-block{
@@ -136,6 +136,53 @@
 		left: -600px;
 	}
 
+	.help{
+		background: url(../img/bgs/11_tab.png) no-repeat center top;
+		height: 520px;
+	}
+
+	.help-img{
+		width: 30px;
+	}
+
+	.help-text{
+		font-size: 8pt;
+	}
+
+	.help-box{
+		width: 300px;
+	}
+
+	.help-block{
+		width: 95px;
+	}
+
+	.help-keys{
+		margin: 55px 0px;
+		&:before{
+			left: -10px;
+		}
+		&:after{
+			right: -20px;
+		}
+	}
+
+	.help-keys .help-img{
+		width: 50px;
+	}
+
+	.help-rise{
+		margin-top: 25px;
+	}
+
+	.title-text{
+		font-size: 14pt;
+	}
+
+	.benefits-block{
+		margin: 60px 0 10px;
+	}
+
 	.footer-social, .footer-contacts{
 		width: 150px;
 	}
@@ -146,7 +193,91 @@
 }
 
 @media screen and (max-width: 767px){
-	.wrapper{
+	.wrapper, .footer{
 		display: none;
+	}
+
+	.lang-link{
+		padding: 5px;
+		font-size: 10pt;
+	}
+
+	.mobile{
+		display: block;
+	}
+
+	.mobile-wrapper{
+		width: 100%;
+		text-align: center;
+	}
+
+	.mobile-start{
+		height: 480px;
+		background: url(../img/bgs/1_mobile.jpg) no-repeat center top;
+	}
+
+	.mobile-start-logo{
+		margin: 75px 0 10px;
+	}
+
+	.mobile-start-text{
+		position: static;
+		width: 145px;
+		margin: 0 auto;
+		text-align: left;
+		font-size: 10pt;
+	}
+
+	.mobile-start-link{
+		color: $white;
+		font-family: $robcon;
+		font-size: 10pt;
+		margin: 140px 0 0;
+		display: block;
+	}
+
+	.mobile-start-link-text{
+		margin-top: 15px;
+	}
+
+	.directions-link{
+		display: block;
+		padding: 25px 20px;
+		font-size: 10pt;
+		color: $white;
+		background: $black;
+		text-transform: uppercase;
+		border-bottom: 1px solid $white;
+		text-align: left;
+		transition: $speed;
+		&:hover{
+			background: $red;
+			transition: $speed;
+		}
+	}
+
+	.directions-text{
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 15px;
+		width: 150px;
+	}
+
+	.directions-icon-place{
+		display: inline-block;
+		vertical-align: middle;
+		width: 60px;
+		text-align: center;
+	}
+
+	.directions-arrow{
+		float: right;
+		color: $red;
+		margin: 15px 0 0;
+	}
+
+	.directions-link:hover .directions-arrow{
+		color: $white;
+		transition: $speed;
 	}
 }

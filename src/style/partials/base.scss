@@ -21,6 +21,10 @@ input[type="submit"], input[type="submit"]:hover{
 	transition: $speed;
 }
 
+.mobile{
+	display: none;
+}
+
 .wrapper{
 	width: 100%;
 }
