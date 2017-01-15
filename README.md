@@ -2,10 +2,10 @@ DUSO
 ====
 
 Installing:
-* Install NodeJS & run NodeJS console.
+* Install NodeJS & run NodeJS console;
 * Choose a working directory and run command: 
 	`git clone https://github.com/VsevolodBobrovsky/duso.git`
-* Open /duso directory.
+* Open /duso directory;
 * Install gulp using command:
 	`npm install gulp`
 * Install dev dependencies using command:
@@ -17,7 +17,7 @@ Developing:
 * Websync will automatically open [http://localhost:9000](http://localhost:9000) in browser;
 * All the changes in code will also be automatically watched;
 * While creating a final build (production), remove all the comments from gulpfile.js - to uglify, minify, autoprefix code and to compress images;
-* If any errors appear, try to use "gulp" command once again.
+* If any errors appear, try to use `gulp` command once again.
 
 Instruments used:
 * SCSS - to create stylesheets;
