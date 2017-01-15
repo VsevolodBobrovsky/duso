@@ -1,12 +1,37 @@
 <section class="wrapper contacts">
-	<div id="map" class="contacts-map"></div>
+	<div id="contactsMap" class="contacts-map"></div>
 	<script>
 	function initMap() {
-        window.contactsMap = new google.maps.Map(document.getElementById('map'), {
+        window.contactsMap = new google.maps.Map(document.getElementById('contactsMap'), {
           center: {lat: 50.416616, lng: 30.554287},
           scrollwheel: false,
           zoom: 18
         });
+
+        var contactsImage = new google.maps.MarkerImage('img/imgs/geo.png',
+			new google.maps.Size(55,79),
+			new google.maps.Point(0,0),
+			new google.maps.Point(42,56)
+		);
+
+		var contactsMarker1 = new google.maps.Marker({
+    		position: {lat: 50.416616, lng: 30.554287},
+    		icon: contactsImage,
+    		map: contactsMap
+  		});
+		var contactsMarker2 = new google.maps.Marker({
+    		position: {lat: 46.4810785, lng: 30.733824},
+    		icon: contactsImage,
+    		map: contactsMap
+  		});
+		var contactsMarker3 = new google.maps.Marker({
+    		position: {lat: 49.862323, lng: 24.031194},
+    		icon: contactsImage,
+    		map: contactsMap
+  		});
+        contactsMarker1.setMap(contactsMap);
+        contactsMarker2.setMap(contactsMap);
+        contactsMarker3.setMap(contactsMap);
 
         var mapstyle = [{
 		"featureType": "all",
@@ -215,30 +240,30 @@
 				<div class="title-text">Наши<br>контакты</div>
 			</div>
 			<div class="contacts-toggle">
-				<a class="contacts-toggle-link contacts-toggle-link-active" data-coordinateX="50.416616" data-coordinateY="30.554287">
+				<a class="contacts-toggle-link contacts-toggle-link-active" data-lat="50.416616" data-lng="30.554287">
 					<span class="contacts-u">Киев</span> <i class="fa fa-map-marker" aria-hidden="true"></i>
 				</a>
-				<a class="contacts-toggle-link" data-coordinateX="40.416616" data-coordinateY="40.554287">
+				<a class="contacts-toggle-link" data-lat="46.4810785" data-lng="30.733824">
 					<span class="contacts-u">Одесса</span> <i class="fa fa-map-marker" aria-hidden="true"></i>
 				</a>
-				<a class="contacts-toggle-link" data-coordinateX="20.416616" data-coordinateY="70.554287">
+				<a class="contacts-toggle-link" data-lat="49.862323" data-lng="24.031194">
 					<span class="contacts-u">Львов</span> <i class="fa fa-map-marker" aria-hidden="true"></i>
 				</a>
 			</div>
 			<div class="contacts-text">
-				<div class="contacts-addr contacts-addr-active">
+				<div class="contacts-addr contacts-addr-active" data-ind="0">
 					<div class="contacts-title">Киев</div>
 					<div class="contacts-p">38 (044) 503-78-53</div>
 					<div class="contacts-p">zyy@duso.ua</div>
 					<div class="contacts-p">ул. Бастионная, 12</div>
 				</div>
-				<div class="contacts-addr">
+				<div class="contacts-addr" data-ind="1">
 					<div class="contacts-title">Одесса</div>
 					<div class="contacts-p">38 (048) 715-57-40</div>
 					<div class="contacts-p">oda@duso.ua</div>
 					<div class="contacts-p">ул. Бунина, 37</div>
 				</div>
-				<div class="contacts-addr">
+				<div class="contacts-addr" data-ind="2">
 					<div class="contacts-title">Львов</div>
 					<div class="contacts-p">38 (032) 24-45-425</div>
 					<div class="contacts-p">ben.andriy@duso.ua</div>

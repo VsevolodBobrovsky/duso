@@ -1,20 +1,51 @@
-@media screen and (max-width: 767px){
-	.container{
-		width: 650px;
-		box-sizing: border-box;
-		margin: 0 0 0 70px;
+@media screen and (max-width: 1176px){
+	body{
+		/*overflow-x: hidden;*/
 	}
 
-	.accordion-big{
-		width: 350px;
+	.discount-slider{
+		width: 280px;
+	}
+
+	.clients-image-place{
+		left: -575px;
+	}
+
+	.container{
+		width: 710px;
+	}
+
+	.clients{
+		margin-top: -91px;
+	}
+
+	.clients-dots{
+		bottom: -175px;
+	}
+
+	.news-social{
+		width: 420px;
+	}
+
+	.blog-half-big{
+		width: 330px;
+	}
+
+	.blog-half-small{
+		width: 285px;
 	}
 
 	.title-text{
-		font-size: 20pt;
+		font-size: 19pt;
 	}
 
 	.business-container{
-		width: 120%;
+		padding: 0;
+	}
+
+	.business-bottom{
+		width: 300px;
+		margin: 200px auto 0;
 	}
 
 	.hr-book-left{
@@ -56,7 +87,7 @@
 	}
 
 	.steps-image{
-		left: -680px;
+		left: -605px;
 	}
 
 	.calc-half{
@@ -76,12 +107,12 @@
 		letter-spacing: 0;
 	}
 
-	.benefits-block{
-		margin-top: 70px;
+	.portfolio-slider{
+		width: 100%;
 	}
 
 	.portfolio-half{
-		width: 300px;
+		width: 330px;
 	}
 
 	.portfolio-img{
@@ -89,7 +120,7 @@
 	}
 
 	.portfolio-inner-slider-arrow-left, .portfolio-inner-slider-arrow-right{
-		top: 50px;
+		top: 70px;
 	}
 
 	.packs-block{
@@ -101,12 +132,55 @@
 		letter-spacing: 0px;
 	}
 
-	.keys-image{
-		left: -670px;
+	.keys-bg{
+		left: -600px;
 	}
 
-	.keys-bg{
-		left: -685px;
+	.help{
+		background: url(../img/bgs/11_tab.png) no-repeat center top;
+		height: 520px;
+	}
+
+	.help-img{
+		width: 30px;
+	}
+
+	.help-text{
+		font-size: 8pt;
+	}
+
+	.help-box{
+		width: 300px;
+	}
+
+	.help-block{
+		width: 95px;
+	}
+
+	.help-keys{
+		margin: 55px 0px;
+		&:before{
+			left: -10px;
+		}
+		&:after{
+			right: -20px;
+		}
+	}
+
+	.help-keys .help-img{
+		width: 50px;
+	}
+
+	.help-rise{
+		margin-top: 25px;
+	}
+
+	.title-text{
+		font-size: 14pt;
+	}
+
+	.benefits-block{
+		margin: 60px 0 10px;
 	}
 
 	.footer-social, .footer-contacts{
@@ -118,6 +192,92 @@
 	}
 }
 
-@media screen and (max-width: 319px){
-	
+@media screen and (max-width: 767px){
+	.wrapper, .footer{
+		display: none;
+	}
+
+	.lang-link{
+		padding: 5px;
+		font-size: 10pt;
+	}
+
+	.mobile{
+		display: block;
+	}
+
+	.mobile-wrapper{
+		width: 100%;
+		text-align: center;
+	}
+
+	.mobile-start{
+		height: 480px;
+		background: url(../img/bgs/1_mobile.jpg) no-repeat center top;
+	}
+
+	.mobile-start-logo{
+		margin: 75px 0 10px;
+	}
+
+	.mobile-start-text{
+		position: static;
+		width: 145px;
+		margin: 0 auto;
+		text-align: left;
+		font-size: 10pt;
+	}
+
+	.mobile-start-link{
+		color: $white;
+		font-family: $robcon;
+		font-size: 10pt;
+		margin: 140px 0 0;
+		display: block;
+	}
+
+	.mobile-start-link-text{
+		margin-top: 15px;
+	}
+
+	.directions-link{
+		display: block;
+		padding: 25px 20px;
+		font-size: 10pt;
+		color: $white;
+		background: $black;
+		text-transform: uppercase;
+		border-bottom: 1px solid $white;
+		text-align: left;
+		transition: $speed;
+		&:hover{
+			background: $red;
+			transition: $speed;
+		}
+	}
+
+	.directions-text{
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 15px;
+		width: 150px;
+	}
+
+	.directions-icon-place{
+		display: inline-block;
+		vertical-align: middle;
+		width: 60px;
+		text-align: center;
+	}
+
+	.directions-arrow{
+		float: right;
+		color: $red;
+		margin: 15px 0 0;
+	}
+
+	.directions-link:hover .directions-arrow{
+		color: $white;
+		transition: $speed;
+	}
 }
